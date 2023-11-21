@@ -1,0 +1,18 @@
+doctype html 
+html
+    head
+        title= "online chat 💬"
+        script(src='/chat.js')
+        script(src='/socket.io/socket.io.js')
+    body
+        #content(style='width: 500px; height: 300px; margin: 0 0 20px 0; border: solid 5px  #F1C232; overflow-y: scroll; border-radius: 6px;padding:9px;font-size:20px; font-family: Georgia, serif;background:  #FCF2D6')
+        .controls
+            | Name: 
+            input#name(style='width:350px;font-family: Georgia, serif;font-size:20px;')
+            br 
+            br
+            | Message :
+            input#field(style='width:350px;font-family: Georgia, serif;font-size:20px;')
+            br
+            br
+            input#send(type='button', value='send',style='width:70px;ont-family: Georgia, serif;font-size:20px;display:block;background-color: #04AA6D;;border: none;color: white; ;text-align: center;text-decoration: none; margin: 4px 2px;cursor: pointer;')
